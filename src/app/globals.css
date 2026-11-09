@@ -1,0 +1,219 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.portfolio-title {
+  font-family: var(--font-geist-sans), "Montserrat", Arial, sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 115%;
+  color: #1e252b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.portfolio-title .highlight {
+  color: #00857a;
+}
+
+.price-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.price-card-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1e252b;
+  line-height: 120%;
+}
+
+.price-card-desc {
+  font-size: 15px;
+  line-height: 150%;
+  color: #555555;
+}
+
+.price-grade {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555555;
+}
+
+.price-amount {
+  font-size: 15px;
+  font-weight: 800;
+  color: #00857a;
+  text-align: right;
+}
+
+.contact-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.contact-card-desc {
+  font-size: 15px;
+  line-height: 150%;
+  color: #555555;
+}
+
+.contact-icon {
+  font-weight: 800;
+  color: #00857a;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.contact-platform {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555555;
+}
+
+.contact-value {
+  font-size: 15px;
+  font-weight: 800;
+  color: #00857a;
+  text-align: right;
+}
+
+.jesta-navbar {
+  padding: 12px 0px;
+}
+
+.navbar-brand-jesta {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #1e252b;
+  text-transform: uppercase;
+}
+
+.navbar-brand-jesta .brand-highlight {
+  color: #00857a;
+}
+
+.nav-link-jesta {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e252b !important;
+  padding: 8px 16px !important;
+}
+
+.btn-contact {
+  background-color: #00857a;
+  border-color: #00857a;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.btn-contact:hover {
+  background-color: #006e65;
+  border-color: #006e65;
+}
+
+.jesta-footer {
+  background-color: #1e252b;
+  color: #ffffff;
+  padding: 24px 0px;
+  border-top: 1px solid #333333;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.footer-subtitle {
+  font-size: 13px;
+  color: #a0a0a0;
+}
+
+.footer-highlight {
+  color: #00857a;
+  font-weight: 700;
+}
+
+.nav-link-jesta:hover {
+  color: #00857a !important;
+}
+
+.active-nav-jesta {
+  color: #00857a !important;
+  border-bottom: 3px solid #00857a;
+}
+
+.btn-contact-active {
+  background-color: #1e252b !important;
+  border-color: #1e252b !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-title {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .price-card-title {
+    font-size: 18px;
+  }
+
+  .active-nav-jesta {
+    border-bottom: none;
+    background-color: #e6f4f2;
+    border-radius: 6px;
+  }
+}
